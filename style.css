@@ -1,0 +1,73 @@
+:root{
+    --firs-col: #BEADFA;
+    --second-col: #D0BFFF;
+    --third-col:#DFCCFB;
+    --body-col: #365486;
+    --cont-col: #C5FFF8;
+    --but-col: #5C8374;
+    --oper-col: #1B4242;
+    --input-col:#40695b;
+    --text-col: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient( 450px , #6c6bbf ,#121163  );
+}
+.cont{
+    width: 500px;
+    background-color: var(--cont-col);
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#input{
+    border: none;
+    background-color: var(--input-col);
+    text-align: right;
+    width: 100%;
+    padding: 30px;
+    font-size: 4rem;
+    color: var(--text-col);
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.allbutton button{
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--text-col);
+    background-color: var(--but-col);
+    border: none;
+    width: 100px;
+    height: 100px;
+    border-radius:50px;
+}
+.allbutton button:hover{
+    background-color: #38564a;
+}
+.allbutton button:active {
+    transform: scale(0.9);
+    transition: ease-in-out 0.15s;
+    background-color: #77b29a;
+}
+.allbutton {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 30px;
+}
+.allbutton .operator {
+    background-color: var(--oper-col);
+}
+.allbutton .operator:hover{
+    background-color: #2e7070;
+}
